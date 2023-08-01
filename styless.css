@@ -165,7 +165,7 @@ body{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 200vh;
+    height: 100vh;
     background: url(blue.webp) no-repeat;
     background-size: cover;
     background-position: center;
@@ -198,56 +198,109 @@ body{
 }
 
 .about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 20px 0 40px;
     display: flex;
-  flex: 1;
-  }
-  
-  .details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
   }
 
-  .togglebtn {
+.togglebtn {
+    margin-right: 50px;
     background-color: rgb(68, 67, 67);
-    color: white;
+    color:white;
     margin-bottom: 20px;
     transition: all 300ms ease;
     padding: 1rem;
     justify-content: center;
-    width: 30rem;
+    width: 20rem;
     border-radius: 20px;
     max-width: fit-content;
     font-size: 20px;
     text-align: center;
+    cursor: pointer;
+    position: relative;
     
-  }
+  } 
   
-  .togglebtn:hover {
+.togglebtn:hover {
     background: black;
   color: white;
-}
+} 
+
+/* .details-container {
+    display: none;
+  } */
+
+/* .details-container.active{
+    display: block;
+} */
 
   .toggleIcon{
     font-size: 25px;
   }
 
-.hidden{
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+.details-container{
+    background: rgb(10, 4, 46);
+    color: white;
     text-align: center;
-    color: black;
+    border-radius: 2%;
+    width: 75%;
+    padding-top: 20px;
 }
 
+#skills{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(blue.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.skills-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 10% 0;
+}
+
+.skills .professional-skill{
+    padding-right: 60px;
+    color: white;
+}
+
+.skills .professional-skill h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.professional-skills{
+    padding-left: 20%;
+}
+
+.skills .professional-skills h3{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.professional-progress li{
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.progress{
+    margin-bottom: 10px;
+    font: 900 1.14285/1 Cinzerl, cursive;
+    color: white;
+}

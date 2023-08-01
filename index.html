@@ -19,7 +19,7 @@
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="#about">About</a>
-            <a href="#">Skill</a>
+            <a href="#skills">Skill</a>
             <a href="#">Portfolio</a>
             <a href="#">Contact</a>
         </nav>
@@ -55,44 +55,121 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</Menu></h1>
                     <p>In this video we will create a personal portfolio website design step by step using HTML CSS and JavaScript. You can use this website to make your online resume or CV. In this website design we will add name, designation of the user. Then we will display the image, skills, work experience and education details.</p>
+                    
                     <div class="about-containers">
-                        <div class="details-container">
-                          <button class="togglebtn" onclick="myFunction1()"><i class="uil uil-angle-down toggleIcon"></i>EDUCATION<i class="uil uil-angle-down toggleIcon"></i></button>
-                          <div  id="myDiv1" class="hidden">
-                            <br/><p><b>B.Sc. (Hons.) in Software Engineering</b><br />University of Kelaniya<br/>2021 - 2025</p>
-                            <br/><p><b>Diploma in Information Technology</b><br />ESOFT Metro Campus<br/>2019 - 2020</p>
-                            <br/><p><b>GCE A/L - Physical Science</b><br />Devi Balika Vidyalaya col-08<br/>2016 - 2019</p>
-                          </div>
-                          
+                        <button class="togglebtn" id="togglebtn1" onclick="setStatus1Active()"><i class="uil uil-angle-down toggleIcon"></i>EDUCATION<i class="uil uil-angle-down toggleIcon"></i></button>
+                          <button class="togglebtn" id="togglebtn2" onclick="setStatus2Active()"><i class="uil uil-angle-down toggleIcon"></i>VOLANTEERING<i class="uil uil-angle-down toggleIcon"></i></button>
+                    </div>
+
+                    <div class="details-container" id="details-container1">
+                        <br/>
+                    </div>
+                    <div  class="details-container" id="details-container2">
+                        <br/>
                       </div>
-                      <!-- <script src="main.js"></script> -->
-                    </div> 
-                    <div class="about-containers">
-                        <div class="details-container">
-                          <button class="togglebtn" onclick="myFunction2()"><i class="uil uil-angle-down toggleIcon"></i>VOLANTEERING<i class="uil uil-angle-down toggleIcon"></i></button>
-                  
-                          <div  id="myDiv2" class="hidden">
-                            <br/><p><b>Vice Secretary</b><br />
-                                IEEE Computer Society, University of Kelaniya<br/>
-                                Jul 2022 - Present
-                              </p>
-                              <br/><p><b>Executive Committee Member</b><br />
-                              IEEE WIE Student Branch Affinity Group, University of Kelaniya<br/>
-                              Jul 2022 - Present
-                              
-                              </p>
-                              <br/><p><b>Ambassador</b><br />
-                                IEEE Xtreme, University of Kelaniya<br/>
-                              Jul 2022 - Present
-                              </p>
+                    
+                </div>
+
+                
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="skills-content">
+        <h1>Skills</h1>
+        </div>
+        <div class="skill-content">
+            <div class="skill-row">
+                <div class="col1">
+                    <div class="professional-skill">
+                        <h3>Technical Skills</h3>
+                    <div class="each-skills">
+                        <div class="candidatos">
+                            <div class="parcial">
+                                <div class="info">
+                                    <div class="name">JavaScript</div>
+                                    <div class="percentage-name">85%</div>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="percentagem" style="width: 85%;"></div>
+                                </div>
                             </div>
-                            <!-- <script src="script.js"></script> -->
-                          </div>
-                          </div>
+                        </div>
+
+                        <div class="candidatos">
+                            <div class="parcial">
+                                <div class="info">
+                                    <div class="name">JavaScript</div>
+                                    <div class="percentage-name">85%</div>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="percentagem" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="candidatos">
+                            <div class="parcial">
+                                <div class="info">
+                                    <div class="name">JavaScript</div>
+                                    <div class="percentage-name">85%</div>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="percentagem" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="candidatos">
+                            <div class="parcial">
+                                <div class="info">
+                                    <div class="name">JavaScript</div>
+                                    <div class="percentage-name">85%</div>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="percentagem" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="professional-skills">
+                        <h3>Professional Skills</h3>
+                        <ul class="professional-progress">
+                            <li>
+                                <div class="progress progress-circle" data-progress="55"></div>
+                                <div class="pr-skill-name">Communication</div>
+                            </li>
+
+                            <li>
+                                <div class="circle" data-progress="95"></div>
+                                <div class="skill-name">Team work</div>
+                            </li>
+
+                            <li>
+                                <div class="circle" data-progress="65"></div>
+                                <div class="skill-name">Communication</div>
+                            </li>
+
+                            <li>
+                                <div class="circle" data-progress="90"></div>
+                                <div class="skill-name">Creativity</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="circle-progress.js"></script>
     <script src="main.js"></script>
     
 </body>
