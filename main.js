@@ -77,35 +77,20 @@ document.getElementById("togglebtn2").addEventListener("contextmenu", function (
   setStatus1Inactive();
 });
 
+// let circularProgress = document.querySelector(".circular-progress"),
+//     progressValue = document.querySelector(".progress-value");
 
+// let progressStartValue = 0,
+//     progressEndVAlue = 30,
+//     speed = 100;
 
+// let progress = setInterval(()=> {
+//   progressStartValue++;
 
-// function toggleMenu() {
-//     const menu = document.querySelector(".about-containers");
-//     const icon = document.querySelector(".details-container");
-//     menu.classList.toggle("open");
-//     icon.classList.toggle("open");
-    
+//   progressValue.textContent = `${progressStartValue}%`
+//   circularProgress.style.background = `conic-gradient(#0ef ${progressStartValue * 3.6}deg, #ededed 0deg)`
+
+//   if(progressStartValue==progressEndVAlue){
+//     clearInterval(progress);
 //   }
-  
-//   function myFunction1() {
-//     var x = document.getElementById("details-container active");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-   
-//   }
-  
-//   function myFunction2() {
-//     var x = document.getElementById("details-container");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-    
-//   }
-
-//   Event.currentTarget.classList.add("about-container");
+// }, speed)
