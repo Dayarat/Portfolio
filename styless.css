@@ -21,7 +21,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: rgb(68, 67, 67);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -54,16 +54,18 @@ body{
     transition: .3s;
 }
 
-.navbar a:hover{
+.navbar a:hover, .navbar a.active{
     color: #0ef;
 }
+
 
 .home{
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(blue.webp) no-repeat;
+    /* background: url(blue.webp) no-repeat; */
+    background: #081b29;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -166,7 +168,8 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(blue.webp) no-repeat;
+    /* background: url(blue.webp) no-repeat; */
+    background: #081b29;
     background-size: cover;
     background-position: center;
 }
@@ -238,12 +241,13 @@ body{
   }
 
 .details-container{
-    background: rgb(10, 4, 46);
+    background: transparent;
     color: white;
     text-align: center;
-    border-radius: 2%;
+    border-radius: 5%;
     width: 75%;
     padding-top: 20px;
+    
 }
 
 #skills{
@@ -251,7 +255,8 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(blue.webp) no-repeat;
+    /* background: url(blue.webp) no-repeat; */
+    background: #081b29;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -309,7 +314,7 @@ body{
     background: #0ef;
     border-radius: 3px;
     position: relative;
-    animation: fillBars 2.5s 1;
+    animation: fillBars 2.5s 1 linear forwards;
 }
 /* 
 .div1{
@@ -415,7 +420,7 @@ body{
  
   color: #ededed;
   position: absolute;
-  z-index: 100;
+  z-index: 50;
   font-weight: 700;
   font-size: 2em;
   gap: 20px;
@@ -551,7 +556,8 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 105vh;
-    background: url(blue.webp) no-repeat;
+    /* background: url(blue.webp) no-repeat; */
+    background: #081b29;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -659,7 +665,8 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(blue.webp) no-repeat;
+    /* background: url(blue.webp) no-repeat; */
+    background: #081b29;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -670,18 +677,18 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 100px 5% 0;
+    padding: 55px 5% 0;
     align-items: center;
    
 }
 .contact-left{
     flex-basis: 35%;
-    float: left;
+    /* float: left; */
 }
 .contact-right{
     flex-basis: 60%;
-    float: right;
-    padding-left: 100px;
+    /* float: right;
+    padding-left: 100px; */
 }
 .contact-left p{
     margin-top: 30px;
@@ -734,10 +741,14 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #081b29;
+    background:rgb(68, 67, 67);
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
     color: #0ef;
+}
+.KA{
+    color: #0ef;
+   
 }

@@ -21,8 +21,8 @@ function setStatus1Active() {
         setStatus2Inactive();
       const customMessage = `
       <p><b>B.Sc. (Hons.) in Software Engineering</b><br />University of Kelaniya<br/>2021 - 2025</p>
-      <br/><p><b>Diploma in Information Technology</b><br />ESOFT Metro Campus<br/>2019 - 2020</p>
-      <br/><p><b>GCE A/L - Physical Science</b><br />Devi Balika Vidyalaya col-08<br/>2016 - 2019</p>
+      
+      <br/><p><b>GCE A/L - Physical Science</b><br />Mahinda College Galle<br/>2016 - 2019</p>
       `;
       status1Element.innerHTML = customMessage;
     } else {
@@ -40,17 +40,17 @@ function setStatus2Active() {
     if (status2Active) {
         setStatus1Inactive();
       const customMessage = `
-      <p><b>Vice Secretary</b><br />
-                            IEEE Computer Society, University of Kelaniya<br/>
+      <p><b>Committee Member</b><br />
+                            SESA Student Society, University of Kelaniya<br/>
                             Jul 2022 - Present
                           </p> 
-                          <br/><p><b>Executive Committee Member</b><br />
-                          IEEE WIE Student Branch Affinity Group, University of Kelaniya<br/>
+                          <br/><p><b>Committee Member</b><br />
+                          ZPM National Movement, University of Kelaniya<br/>
                           Jul 2022 - Present
                           
                           </p>
-                          <br/><p><b>Ambassador</b><br />
-                            IEEE Xtreme, University of Kelaniya<br/>
+                          <br/><p><b>Team Player</b><br />
+                            VolleyBall Team, University of Kelaniya<br/>
                           Jul 2022 - Present
                           </p>
       `;
@@ -94,3 +94,67 @@ document.getElementById("togglebtn2").addEventListener("contextmenu", function (
 //     clearInterval(progress);
 //   }
 // }, speed)
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   const navbarLinks = document.querySelectorAll(".header .navbar a");
+
+//   navbarLinks.forEach(link => {
+//     link.addEventListener("click", function(event) {
+//       // Remove 'active' class from all links
+//       navbarLinks.forEach(link => link.classList.remove("active"));
+      
+//       // Add 'active' class to the clicked link
+//       this.classList.add("active");
+//     });
+//   });
+// });
+
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.header .navbar a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            document.querySelector('.navbar a[href*=' + id + ']').classList.add('active');
+        }
+    });
+};
+
+// Detect when a section comes into view
+// const skillsSections = document.getElementById('skills');
+// const progressBars = document.querySelectorAll('.skill-bar');
+
+// function showProgress(){
+//   progressBars.forEach(progressBar=> {
+//     const value = progressBar.dataset.progress;
+//     progressBar.style.opacity = 1;
+//     progressBar.style.width = `${value}%`;
+//   });
+// }
+
+// function hideProgress(){
+//   progressBars.forEach(p=> {
+//     p.style.opacity = 0;
+//     p.style.width =0;
+//   });
+// }
+
+// window.addEventListener('scroll',()=> {
+//   const sectionPos = skillsSections.getBoundingClientRect().top;
+//   const screenPos = window.innerHeight/2;
+
+//   if(sectionPos < screenPos){
+//     showProgress();
+//   }else{
+//     hideProgress();
+//   }
+// })
