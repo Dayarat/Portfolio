@@ -1,5 +1,5 @@
 var typed= new Typed(".text",{
-    strings:["Frontend Developer" ,"YouTouber" ,  "Web Developer"],
+    strings:["Web Developer" , "Frontend Developer" ,"Backend Develover" ],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
@@ -95,19 +95,19 @@ document.getElementById("togglebtn2").addEventListener("contextmenu", function (
 //   }
 // }, speed)
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   const navbarLinks = document.querySelectorAll(".header .navbar a");
+document.addEventListener("DOMContentLoaded", function() {
+  const navbarLinks = document.querySelectorAll(".header .navbar a");
 
-//   navbarLinks.forEach(link => {
-//     link.addEventListener("click", function(event) {
-//       // Remove 'active' class from all links
-//       navbarLinks.forEach(link => link.classList.remove("active"));
+  navbarLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+      // Remove 'active' class from all links
+      navbarLinks.forEach(link => link.classList.remove("active"));
       
-//       // Add 'active' class to the clicked link
-//       this.classList.add("active");
-//     });
-//   });
-// });
+      // Add 'active' class to the clicked link
+      this.classList.add("active");
+    });
+  });
+});
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.header .navbar a');
@@ -158,3 +158,4 @@ window.onscroll = () => {
 //     hideProgress();
 //   }
 // })
+

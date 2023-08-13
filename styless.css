@@ -153,15 +153,45 @@ body{
 
 .imge{
     /* align-items: end;
-    padding: 70px 10% 0; */
+    padding: 70px 10% 0;  */
     flex-basis: 40%;
-    
+    align-items: center;
+    margin-top: 50px;
 }
 
-.imge img{
-    width: 100%;
+.port2 img{
+    width: 500px;
     border-radius: 15px;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    padding-left: 0%;
 }
+
+.port{
+    width: 530px;
+    border-radius: 50%;
+    background: #0ef;
+    height: 530px;
+    align-items: center;
+    
+} 
+.port2{
+    width: 510px;
+    border-radius: 50%;
+    background:rgb(68, 67, 67);
+    height: 510px;
+    align-items: center;
+    
+} 
+
+.port3{
+    width: 520px;
+    border-radius: 50%;
+    background:#081b29;
+    height: 520px;
+    align-items: center;
+    
+} 
 
 #about{
     position: relative;
@@ -277,6 +307,7 @@ body{
     padding-left: 35%;
     font-size: 50px;
     font-weight: 600;
+    margin-top: auto;
 }
 
 .skill-content{
@@ -287,12 +318,15 @@ body{
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
+   
 }
 
 .skill-content h3{
     padding-left: 15%;
     font-size: 40px;
     font-weight: 500;
+    width: 100%;
+  
 }
 
 .skill-name{
@@ -368,6 +402,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+
     /* background-color: red; */
 }
 
