@@ -63,7 +63,7 @@ body{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    height: 105vh;
     /* background: url(blue.webp) no-repeat; */
     background: #081b29;
     background-size: cover;
@@ -197,7 +197,7 @@ body{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    height: 110vh;
     /* background: url(blue.webp) no-repeat; */
     background: #081b29;
     background-size: cover;
@@ -287,7 +287,7 @@ body{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    height: 120vh;
     /* background: url(blue.webp) no-repeat; */
     background: #081b29;
     background-size: cover;
@@ -593,7 +593,7 @@ body{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 105vh;
+    height: 110vh;
     /* background: url(blue.webp) no-repeat; */
     background: #081b29;
     background-size: cover;
@@ -702,7 +702,7 @@ body{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    height: 110vh;
     /* background: url(blue.webp) no-repeat; */
     background: #081b29;
     background-size: cover;
@@ -789,4 +789,54 @@ form .btn2{
 .KA{
     color: #0ef;
    
+}
+
+@media only screen and (max-width: 600px){
+
+    .port2 img{
+        width: 500px;
+        border-radius: 15px;
+        /* margin-left: 10px;
+        margin-top: 10px; */
+        padding-left: 0%;
+    }
+    
+    .port{
+        width: 230px;
+        border-radius: 50%;
+        background: #0ef;
+        height: 230px;
+        align-items: center;
+        
+    } 
+    .port2{
+        width: 210px;
+        border-radius: 50%;
+        background:rgb(68, 67, 67);
+        height: 210px;
+        align-items: center;
+        
+    } 
+    
+    .port3{
+        width: 220px;
+        border-radius: 50%;
+        background:#081b29;
+        height: 220px;
+        align-items: center;
+        
+    } 
+
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        
+    }
 }
